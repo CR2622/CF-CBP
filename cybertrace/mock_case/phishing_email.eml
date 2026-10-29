@@ -1,0 +1,30 @@
+Delivered-To: victim@corp.local
+Received: by mx.corp.local (PostFix) with ESMTP id 8F10A29B
+	for <victim@corp.local>; Tue, 27 Oct 2026 10:05:12 +0000 (UTC)
+Received: from mail.secure-update-verify.com ([198.51.100.23])
+	by mx.corp.local with ESMTP id B7882C40
+	for <victim@corp.local>; Tue, 27 Oct 2026 10:05:08 +0000 (UTC)
+Received-SPF: fail (domain of secure-update-verify.com does not designate 198.51.100.23 as permitted sender)
+Authentication-Results: mx.corp.local; spf=fail (sender IP 198.51.100.23); dkim=fail (bad signature)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=secure-update-verify.com; s=k1;
+	h=from:to:subject:date;
+	bh=invalid_signature_hash_xyz==; b=forged_signature_bytes_123==
+From: Corporate IT Helpdesk <admin-support@secure-update-verify.com>
+To: Victim Employee <victim@corp.local>
+Subject: URGENT: Mandatory Security Patch & Action Required
+Date: Tue, 27 Oct 2026 10:05:00 +0000
+Message-ID: <20261027100500.8921@secure-update-verify.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+
+<html>
+<body>
+<h2>URGENT: Corporate Security Notification</h2>
+<p>Dear Employee,</p>
+<p>Our internal security monitors detected unauthorized access attempts on your workstation. You are required to review the attached incident briefing and install the mandatory update immediately:</p>
+<p><a href="http://secure-update-verify.com/download/urgent_report.pdf">Download Incident Briefing (urgent_report.pdf)</a></p>
+<p>Failure to comply within 24 hours will result in directory account suspension.</p>
+<br/>
+<p>IT Incident Response Team<br/>Global Cyber Operations</p>
+</body>
+</html>
